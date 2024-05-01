@@ -1,0 +1,19 @@
+--para crear la aplicacion
+npx create-next-app
+--instalar las dependencias cuando tien pakage.json
+npm ci
+para correr con puerto cambiado
+npm run dev -- -p 3001
+**************
+docker pull postgres
+docker run --name nextjs-db -p 5432:5432 -e POSTGRES_PASSWORD=1234 -d postgres
+----para generar proyecto con nodejs instalado
+npm init -y
+--instalar las librerias de postgres
+npm install postgres
+--librerias para pruebas unitarias 
+npm install -D vitest
+--instalar orm
+npm i drizzle-orm
+--herramientas que ayuda a desarrollo
+npm i -D drizzle-kit
