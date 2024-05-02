@@ -17,3 +17,6 @@ npm install -D vitest
 npm i drizzle-orm
 --herramientas que ayuda a desarrollo
 npm i -D drizzle-kit
+--script para crear introspect
+"introspect": "drizzle-kit introspect:pg --config=introspect.config.ts",
+hora 01:51:3
