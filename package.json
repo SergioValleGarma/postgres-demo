@@ -5,7 +5,8 @@
   "scripts": {
     "test": "vitest",
     "generate": "drizzle-kit generate:pg",
-    "introspect": "drizzle-kit introspect:pg --config=introspect.config.ts"
+    "introspect": "drizzle-kit introspect:pg --config=introspect.config.ts",
+    "dev": "tsx ./src/server.ts"
   },
   "keywords": [],
   "author": "",
@@ -13,10 +14,13 @@
   "description": "",
   "dependencies": {
     "drizzle-orm": "^0.30.10",
+    "fastify": "^4.26.2",
     "postgres": "^3.4.4"
   },
   "devDependencies": {
     "drizzle-kit": "^0.20.17",
+    "tsx": "^4.8.2",
+    "typescript": "^5.4.5",
     "vitest": "^1.5.3"
   }
 }

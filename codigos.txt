@@ -19,4 +19,13 @@ npm i drizzle-orm
 npm i -D drizzle-kit
 --script para crear introspect
 "introspect": "drizzle-kit introspect:pg --config=introspect.config.ts",
-hora 01:51:3
+--para instalar fastifay
+npm install fastify
+npm install --save-dev typescript
+--libretira para leer archivos ts
+npm install --save-dev tsx
+--se crea unscript en pakage.json
+"dev": "tsx ./src/server.ts"
+--despues se ejecuta con npm run dev
+hora 2:00
+
