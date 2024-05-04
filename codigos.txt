@@ -27,5 +27,6 @@ npm install --save-dev tsx
 --se crea unscript en pakage.json
 "dev": "tsx ./src/server.ts"
 --despues se ejecuta con npm run dev
-hora 2:00
+--despues se ejecuta con npm run watch
+hora 2:26
 
