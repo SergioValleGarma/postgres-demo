@@ -108,15 +108,16 @@ type ActualizarUsuarioRequest = {
       result: await queryUpdate,
     };
   });
-// // eliminar usuarios por id
-// server.delete('/usuarios/:id', async (request, reply) =>
-//     {
-//         const {id: paramId} = request.params as {id: number};
-//     await db.delete(usuario).where(eq(usuario.id, paramId)); 
-//     return { message: 'El usuario ha sido eliminado.' };
-//     });
 
-// se inicializael servidor
+// eliminar usuarios por id
+server.delete<{ Params: {id: number}}>('/usuarios/:id', async (request, reply) =>
+    {
+        //const {id: paramId} = request.params as {id: number};
+    await db.delete(usuario).where(eq(usuario.id, request.params.id)); 
+    return { message: 'El usuario ha sido eliminado.' };
+    });
+
+//se inicializael servidor
 server.listen({port: 3000}, (err, address) => {
 if (err) throw err;
 console.log(`Server listening on ${address}`);

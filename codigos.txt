@@ -28,5 +28,5 @@ npm install --save-dev tsx
 "dev": "tsx ./src/server.ts"
 --despues se ejecuta con npm run dev
 --despues se ejecuta con npm run watch
-vide4  51:54
+vide4  58
 
